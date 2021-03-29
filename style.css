@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root  {
+  --brown:hsla(0, 38%, 15%, 0.965);
+  --lightbrwn: hsla(0, 100%, 73%, 0.698);
+  --peach: hsl(352, 86%, 66%);
+  --pxnk: hsl(330, 63%, 38%);
+  --cloud: hsl(187, 96%, 71%); 
+  --green: hsl(120, 60%, 47%);
+  --paleblue: hsl(221, 95%, 64%);
+}
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--brown);
+  color: var(--peach);
+  text-shadow: 0 0 0 3px var(--pxnk);
+}
+
+.wrapper {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  color: hsl(var(), saturation, lightness);
+}
+
+.card {
+  background-color: var(--lightbrwn);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: 3px var(--peach);
+  color: var(--brown);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+  box-shadow: 0 0 10px 2px var(--pxnk);
+}
+
+.form {
+display: flexbox;
+float: left;
+gap: 2rem;
+  
+}
+
+label {
+  font-weight: bold;
+}
+
+.card-header::after {
+  text-align: center;
+  content: " ";
+  display: block;
+  width: 100%;
+  background-color: var(--pxnk);
+  height: 2px;
+}
+
+.card-body {
+  min-height: 100px;
+  background-color: var(--brown);
+  color: var(--lightbrwn);
+  font-size: large;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+.card-footer::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background-color: var(--pxnk);
+  height: 2px;
+}
+
+.card-footer::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.btn {
+  border: none;
+  background-color: hsl(360, 91%, 36%);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(352, 86%, 66%);
+}
+
+button {
+  cursor: default;
+  background-color: #c0c7cf;
+}
+
+.float-right {
+  float: right;
+}
+
+.password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px dashed #c0c7cf;
+  border-radius: 6px;
+  resize: none;
+  overflow: hidden;
+  word-break: break-all;
+  color: var(lightbrwn)
+}
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+  #password {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+}
+ footer {
+   text-align: center;
+   padding: 15px;
+ }
